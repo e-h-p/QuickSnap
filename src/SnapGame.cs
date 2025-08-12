@@ -1,4 +1,4 @@
-using System;
+using System
 using SwinGameSDK;
 using CardGames.GameLogic;
 
@@ -10,8 +10,12 @@ namespace CardGames
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
+<<<<<<< HEAD
             SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
 			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);
+=======
+          
+>>>>>>> add-drawcard-images
         }
 
 		/// <summary>
@@ -20,7 +24,7 @@ namespace CardGames
 		/// <param name="myGame">The game object to update in response to events.</param>
 		private static void HandleUserInput(Snap myGame)
 		{
-			//Fetch the next batch of UI interaction
+			//etch the next batch of UI interaction
 			SwinGame.ProcessEvents();
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
